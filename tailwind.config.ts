@@ -4,7 +4,7 @@ const config: Config = {
   theme: {
     colors: {
       "kw-gray": "#666666",
-      "kw-drak-green": "#98AE8D",
+      "kw-dark-green": "#98AE8D",
       "kw-secondary-green": "#EDF0E9",
       "kw-main-green": "#68DE4E",
       "kw-main-light-green": "#A2E394",
