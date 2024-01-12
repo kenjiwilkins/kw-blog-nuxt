@@ -3,6 +3,8 @@ name: Pull Request
 on:
   pull_request:
     types: [opened]
+  push:
+    branches: [master, develop-*]
 
 jobs:
   build:
