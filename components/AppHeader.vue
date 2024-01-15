@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="flex py-6 px-4 bg-kw-dark-green">
+    <div class="flex p-4 border-b border-kw-gray-200 h-full">
       <h1 class="text-6xl font-bold">
         <NuxtLink to="/">
           <span>KW BLOG</span>
