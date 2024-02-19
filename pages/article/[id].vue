@@ -16,7 +16,6 @@
     <div class="py-4">
       <BlocksRenderer :blocks="body" class="py-4" />
     </div>
-    <h1>This page is under construction</h1>
   </div>
 </template>
 <script setup lang="ts">

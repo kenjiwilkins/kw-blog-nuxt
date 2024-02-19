@@ -17,8 +17,5 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: "aws-lambda",
-    devProxy: {
-      "/api": "https://ya0rt81r6a.execute-api.ap-northeast-1.amazonaws.com/api",
-    },
   },
 });

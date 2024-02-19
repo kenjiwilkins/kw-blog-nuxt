@@ -1,4 +1,12 @@
-import type { VNode } from "vue";
+import type { VNode, RendererNode, RendererElement } from "vue";
+
+export interface BlockRendererProps {
+  blocks: IBlock[];
+}
+
+export interface AnnotationRenderer {
+  [key: string]: (annotation: IAnnotations) => any;
+}
 
 export interface IRichTextProps {
   blocks: IBlock[];
@@ -116,8 +124,4 @@ export interface IDivider {
 
 export interface IBlockRenderer {
   [key: string]: (block: IBlock, key: string, next: VNode) => VNode | any;
-}
-
-export interface IRenderer {
-  block: IBlockRenderer;
 }
