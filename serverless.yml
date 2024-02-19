@@ -1,0 +1,15 @@
+service: kw-blog-lambda
+frameworkVersion: "3"
+provider:
+  name: aws
+  stage: prod
+  region: ap-northeast-1
+  runtime: nodejs20.x
+package:
+  patterns:
+    - "!**"
+    - ".output/server/**"
+functions:
+  NuxtSsrEngine:
+    handler: ".output/server/index.handler"
+    url: true
